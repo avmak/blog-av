@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{% block title %}blogav{% endblock %}</title>
+        <meta name="description" content="This is a blog about Python, Django and Web Development." />
+        <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+        <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+        <script src="{% static 'js/blog.js' %}"></script>
+    </body>
+</html>
